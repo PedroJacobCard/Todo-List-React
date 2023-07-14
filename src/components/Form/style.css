@@ -1,0 +1,50 @@
+.container-flex  {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form-title {
+  color: rgb(198, 255, 255);
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.button,
+input {
+  padding: .4rem 1rem;
+  color: aliceblue;
+  background: transparent;
+  border: 1px solid aliceblue;
+  border-radius: 3px;
+  transition: all .4s ease-in-out;
+  outline: none;
+}
+
+
+.button:active,
+.button:focus,
+input:active,
+input:focus {
+  border: 1px solid rgb(0, 131, 254);
+}
+
+.button:hover{
+  cursor: pointer;
+  border: 1px solid rgb(0, 131, 254);
+  color: rgb(0, 131, 254);
+}
+
+@media only screen and (max-width: 768px){
+  .container-flex  {
+    flex-direction: column;
+  }
+}
